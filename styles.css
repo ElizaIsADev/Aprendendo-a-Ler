@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+body {
+    font-family: "Signika Negative", sans-serif;
+    background-image: url("aprendendo-a-ler.png");
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center; 
+    height: auto; 
+    margin: 0; 
+    padding: 0; 
+}
+h1 {
+    font-size: 2.5rem;
+    color: #f5f7fa;
+    text-align:center;
+    letter-spacing: 0.4rem;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:3rem;
+}
+
+section input{
+    width: 25rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.90rem;
+    margin-bottom: 0.90rem;
+    color:rgb(20, 60, 111);
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+section button{
+    width: 9rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.90rem;
+    background-color: #045d9c;
+    color:#ffffff;
+    font-size: 0.95rem;
+    cursor:pointer
+}
+section button:hover{
+    background-color:#045d9c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.resultado-pesquisa {
+    border: 0px solid #ffffff;
+    padding: 50px;
+    margin-top:20px; 
+}
+.item-resultado {
+    background: #ffffff;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.item-resultado h2{
+font-size: 1rem;
+color: #045d9c;
+align-items: center;
+}
+.descricao-meta{
+    font-size: 1rem;
+    color: #003b68;
+    align-items: center;
+}
+
+footer{
+    background-color: #ffffff;
+    opacity: 0.5; 
+    color: #003b68;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 17rem;
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
