@@ -19,7 +19,7 @@ h1 {
 }
 section{
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     margin-bottom:3rem;
 }
@@ -33,7 +33,6 @@ section input{
     color:rgb(20, 60, 111);
     font-size: 0.95rem;
     box-sizing: border-box;
-    align-items: center;
 }
 
 section button{
@@ -51,10 +50,13 @@ section button:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
-.resultado-pesquisa {
-    border: 0px solid #ffffff;
-    padding: 50px;
-    margin-top:20px; 
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
 }
 .item-resultado {
     background: #ffffff;
@@ -62,12 +64,19 @@ section button:hover{
     padding: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
+    
 }
 .item-resultado h2{
 font-size: 1rem;
 color: #045d9c;
-align-items: center;
+
+}
+.item-resultado a{
+    text-decoration: none;
+    color: #003b68;
+}
+.item-resultado a:hover{
+    text-decoration: underline;
 }
 .descricao-meta{
     font-size: 1rem;
@@ -84,32 +93,51 @@ footer{
     text-align: center;
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 768px) {
     h1 {
-        font-size: 1.8rem;
-        letter-spacing: 0.1rem;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
     }
 
     section input {
-        width: 17rem;
-    }
-
-    section button {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
+        width: 25rem;
+        padding: 0.8rem;
     }
 
     .resultados-pesquisa {
-        width: 90%;
-        height: 50vh;
+        width: 40rem;
+        height: 40vh;
+        overflow: hidden;
     }
 
     .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 480px){
+    h1{
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+    section input{
+        width: 17rem;
+    }
+    section button{
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .resultados-pesquisa{
+        width: 90%;
+        height: 50vh;
+        overflow: hidden;
+    }
+    .item-resultado h2{
         font-size: 1.1rem;
     }
-
-    footer {
+    footer{
         font-size: 0.9rem;
+    }
+    .descricao-meta a{
+        font-size: 1.1rem;
     }
 }
