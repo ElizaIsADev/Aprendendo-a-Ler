@@ -28,6 +28,7 @@ aprendendo-a-ler/
 ├── styles.css
 ├── dados.js
 └── app.js
+```
 
 ## 📜 Funcionalidades
 
