@@ -32,21 +32,21 @@ aprendendo-a-ler/
 
 ## 📜 Funcionalidades
 
-Pesquisa Interativa: Digite uma letra e veja os resultados aparecerem como mágica!
-Design Responsivo: Funciona em qualquer dispositivo, seja desktop ou mobile.
-Fácil de Usar: Interface simples e intuitiva.
+- **Pesquisa Interativa**: Digite uma letra e veja os resultados aparecerem como mágica!
+- **Design Responsivo**: Funciona em qualquer dispositivo, seja desktop ou mobile.
+- **Fácil de Usar**: Interface simples e intuitiva.
 
 ## 🤓 Como Funciona
 
-Digite uma letra no campo de pesquisa.
-Clique no botão “Clica em mim!”.
-Veja os resultados aparecerem na seção de resultados.
+- **Digite uma letra no campo de pesquisa.**
+- **Clique no botão “Clica em mim!”.**
+- **Veja os resultados aparecerem na seção de resultados.**
  
 ## 🧙‍♂️ Código JavaScript
 
 Aqui está um trechinho do código JavaScript que faz tudo funcionar:
 
-function pesquisar() {
+    function pesquisar() {
     let section = document.getElementById("resultados-pesquisa");
     let campoPesquisa = document.getElementById("campo-pesquisa").value;
 
@@ -78,7 +78,8 @@ function pesquisar() {
     }
 
     section.innerHTML = resultados;
-}
+    }
+
 
 ## 📅 Atualizações
 
