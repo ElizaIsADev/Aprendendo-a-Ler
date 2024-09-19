@@ -107,7 +107,7 @@ footer{
     .resultados-pesquisa {
         width: 40rem;
         height: 40vh;
-        overflow: hidden;
+        overflow: auto;
     }
 
     .item-resultado h2 {
@@ -129,7 +129,7 @@ footer{
     .resultados-pesquisa{
         width: 90%;
         height: 50vh;
-        overflow: hidden;
+        overflow: auto;
     }
     .item-resultado h2{
         font-size: 1.1rem;
